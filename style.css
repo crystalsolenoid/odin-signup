@@ -51,6 +51,42 @@ main {
   flex-basis: 100ch;
   flex-shrink: 1;
 }
+
+.input, main, form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.input {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-block: 1.5em;
+  /* for background */
+  margin-left: -4ch;
+  padding-left: 4ch;
+}
+
+p {
+  max-width: 52ch;
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1rem;
+  max-width: none;
+}
+
+p, ul, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 100;
+  font-style: italic;
+}
   
 form ul {
   display: flex;
@@ -74,6 +110,7 @@ form li {
 
 button {
   padding: 12px 32px;
+  align-self: flex-start;
 }
 
 input {
@@ -89,6 +126,7 @@ input {
 }
 
 body > header {
+  background-color: #145040;
   background-image: url('img/eug.jpg');
   background-size: cover;
   background-position: center;
@@ -117,10 +155,19 @@ body > header footer {
   }
 }
 
+main {
+  background: #f9fafb;
+}
+
 button {
   font-size: 1.3rem;
   background: #145040;
   color: white;
   border-radius: 8px;
   border-style: none;
+}
+
+.input {
+  background: white;
+  box-shadow: 0 5px 5px #ddd;
 }
