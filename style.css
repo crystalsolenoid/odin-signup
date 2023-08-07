@@ -23,9 +23,24 @@ body > header {
   justify-content: space-between;
 }
 
+body > header h1::before {
+  content: ' ';
+  background-image: url('img/logo.png');
+  height: 4em;
+  aspect-ratio: 0.75;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  display: inline-block;
+}
+
 body > header > h1 {
-  padding: 0.5em;
+  padding: 0.2em;
   margin-block: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body > header footer {
