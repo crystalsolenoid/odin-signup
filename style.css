@@ -1,13 +1,35 @@
 /* Layout */
 
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
+  align-items: stretch;
+  min-height: 100%;
+
+  margin: 0;
+  gap: 4ch;
 }
 
 body > header {
   flex-basis: 50ch;
   flex-shrink: 1;
   flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body > header > h1 {
+  padding: 0.5em;
+  margin-block: 8em;
+}
+
+body > header footer {
+  padding: 0.5em;
 }
 
 main {
@@ -36,4 +58,31 @@ form li {
 }
 
 input {
+}
+
+
+/* Styling */
+
+body > header {
+  background-image: url('img/eug.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+body > header {
+  text-align: center;
+  color: white;
+}
+
+body > header {
+  & h1, & footer {
+    background: hsla(0, 0%, 0%, .5);
+  }
+}
+
+body > header footer {
+  margin-top: auto;
+  & a {
+    color: white;
+  }
 }
