@@ -14,3 +14,26 @@ main {
   flex-basis: 100ch;
   flex-shrink: 1;
 }
+  
+form ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+
+  padding: 0;
+  row-gap: 1em;
+  column-gap: 8ch;
+}
+
+form ul ul {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+form li {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+}
