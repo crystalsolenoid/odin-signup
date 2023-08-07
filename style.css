@@ -26,7 +26,7 @@ body > header {
 body > header h1::before {
   content: ' ';
   background-image: url('img/logo.png');
-  height: 4em;
+  height: 1.5em;
   aspect-ratio: 0.75;
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body > header h1::before {
 
 body > header > h1 {
   padding: 0.2em;
-  margin-block: 8em;
+  margin-block: 20svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +78,13 @@ input {
 
 /* Styling */
 
+@font-face {
+  font-family: "Norse-Bold";
+  src:
+    local("Norse Bold"),
+    url("font/Norse-Bold.otf");
+}
+
 body > header {
   background-image: url('img/eug.jpg');
   background-size: cover;
@@ -87,6 +94,11 @@ body > header {
 body > header {
   text-align: center;
   color: white;
+}
+
+body > header h1 {
+  font-size: 5rem;
+  font-family: "Norse-Bold";
 }
 
 body > header {
