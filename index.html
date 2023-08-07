@@ -19,35 +19,41 @@
       <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <strong>now</strong> to get started.</p>
       <p>You <strong>know</strong> you want to.</p>
       <form method=post> <!--Form, including button-->
-        <fieldset>
-          <legend>Let's do this!</legend>
+        <div class=input>
+          <h2>Let's do this!</h2>
           <ul>
-            <li>
-              <label for=firstName>First Name</label>
-              <input type=text id=firstName name=firstName>
-            </li>
-            <li>
-              <label for=lastName>Last Name</label>
-              <input type=text id=lastName name=lastName>
-            </li>
-            <li>
-              <label for=email>Email</label>
-              <input type=email id=email name=email>
-            </li>
-            <li>
+            <li><ul>
+              <li>
+                <label for=firstName>First Name</label>
+                <input type=text id=firstName name=firstName>
+              </li>
+              <li>
+                <label for=lastName>Last Name</label>
+                <input type=text id=lastName name=lastName>
+              </li>
+            </ul></li>
+            <li><ul>
+              <li>
+                <label for=email>Email</label>
+                <input type=email id=email name=email>
+              </li>
+              <li>
                 <label for=phoneNumber>Phone Number</label>
                 <input type=tel id=phoneNumber name=phoneNumber>
-            </li>
-            <li>
-              <label for=password>Password</label>
-              <input type=text id=password name=password>
-            </li>
-            <li>
-              <label for=password2>Confirm Password</label>
-              <input type=text id=password2 name=password2>
-            </li>
+              </li>
+            </ul></li>
+            <li><ul>
+              <li>
+                <label for=password>Password</label>
+                <input type=text id=password name=password>
+              </li>
+              <li>
+                <label for=password2>Confirm Password</label>
+                <input type=text id=password2 name=password2>
+              </li>
+            </ul></li>
           </ul>
-        </fieldset>
+        </div>
         <button>Create Account</button>
       </form>
       <footer><p>Already have an account? <a href=#>Log in</a></p></footer>
