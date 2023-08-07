@@ -72,9 +72,12 @@ form li {
   flex-direction: column;
 }
 
-input {
+button {
+  padding: 12px 32px;
 }
 
+input {
+}
 
 /* Styling */
 
@@ -112,4 +115,12 @@ body > header footer {
   & a {
     color: white;
   }
+}
+
+button {
+  font-size: 1.3rem;
+  background: #145040;
+  color: white;
+  border-radius: 8px;
+  border-style: none;
 }
