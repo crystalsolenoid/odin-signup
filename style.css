@@ -61,7 +61,7 @@ main {
 
 .input {
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   padding-block: 1.5em;
   /* for background */
   margin-left: -4ch;
@@ -170,4 +170,34 @@ button {
 .input {
   background: white;
   box-shadow: 0 5px 5px #ddd;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #222;
+}
+input {
+  font-size: inherit;
+  font-family: system-ui;
+  /* space for feedback: */
+  margin-block-end: 1em;
+}
+input:focus {
+  outline-color: blue;
+}
+input:invalid {
+  outline-color: red;
+  /* space for feedback: */
+  margin-block-end: 0;
+}
+
+input + .feedback {
+  display: none;
+  height: 1em;
+  width: 100%;
+}
+input:invalid + .feedback {
+  display: block;
+  color: red;
+  content: '* Needs attention';
 }
